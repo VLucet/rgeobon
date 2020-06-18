@@ -27,7 +27,8 @@ devtools::install_github("vlucet/geobon")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This demonstrates the basic functionnalities of `geobon`. You can first
+get the list of all the available datasets:
 
 ``` r
 library(geobon)
@@ -66,7 +67,12 @@ head(dataset_list)
 #> 1        thomas.bauer@idiv.de
 #> 2        thomas.bauer@idiv.de
 #> 3        thomas.bauer@idiv.de
+```
 
+From here, you can request information on a single record, and download
+the data associated with this record, if any is available.
+
+``` r
 # Get a specific record
 geobon_get(id = 49)
 #>   id             name         author publicationDate additionalInfo
@@ -86,6 +92,6 @@ geobon_get(id = 49)
 #>   contactDetails.contactEmail
 #> 1        thomas.bauer@idiv.de
 
-# Download the data from that record
+# Download the data from that record into a temp directory
 geobon_download(id = 49, path = tempdir())
 ```
