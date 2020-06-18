@@ -21,6 +21,6 @@ geobon_count = function() {
       return(as.numeric(parsed$data))
     }
   } else {
-    stop("API response if not of type application/json")
+    stop("API response is not of type application/json")
   }
 }

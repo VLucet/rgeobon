@@ -48,7 +48,7 @@ geobon_get = function(id=NULL, ebv_class=NULL, ebv_name=NULL){
       return(parsed$data)
     }
   } else {
-    stop("API response if not of type application/json")
+    stop("API response is not of type application/json")
   }
 
 }
