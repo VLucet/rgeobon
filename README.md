@@ -8,7 +8,8 @@
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![License:
-MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](\(https://opensource.org/licenses/MIT\))
+MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![R-CMD-check](https://github.com/VLucet/geobon/workflows/R-CMD-check/badge.svg)
 <!-- badges: end -->
 
 The goal of geobon is to provide an interface between R and the [GEOBON
