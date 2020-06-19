@@ -1,4 +1,4 @@
 library(testthat)
-library(geobon)
+library(rgeobon)
 
 test_check("rgeobon")
