@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# geobon <img src="inst/images/sticker.png" align="right" width=140/>
+# rgeobon <img src="inst/images/sticker.png" align="right" width=140/>
 
 <!-- badges: start -->
 
@@ -12,27 +12,27 @@ MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.or
 ![R-CMD-check](https://github.com/VLucet/geobon/workflows/R-CMD-check/badge.svg)
 <!-- badges: end -->
 
-The goal of geobon is to provide an interface between R and the [GEOBON
+The goal of rgeobon is to provide an interface between R and the [GEOBON
 open data portal](https://portal.geobon.org/index%3E) RESTfull API
 (please note that the portal is currently in beta). It allows to consult
 the datasets available on the portal and download them.
 
 ## Installation
 
-You can install geobon from GitHub:
+You can install rgeobon from GitHub:
 
 ``` r
-devtools::install_github("vlucet/geobon")
+devtools::install_github("vlucet/rgeobon")
 ```
 
 ## Example
 
-This demonstrates the basic functionnalities of `geobon`. You can first
-get the list of all the available datasets:
+This demonstrates the basic abilities of `rgeobon`. You can first get
+the list of all the available datasets:
 
 ``` r
-library(geobon)
-# Get the list of geobin datasets
+library(rgeobon)
+# Get the list of GEOBON datasets
 dataset_list <- geobon_list()
 head(dataset_list)
 #>   id                                   name            author publicationDate

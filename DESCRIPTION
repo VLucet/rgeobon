@@ -1,4 +1,4 @@
-Package: geobon
+Package: rgeobon
 Type: Package
 Title: The R interface to the GEOBON open data portal RESTfull API
 Version: 0.1.0
