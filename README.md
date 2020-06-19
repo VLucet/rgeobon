@@ -13,9 +13,9 @@ MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.or
 <!-- badges: end -->
 
 The goal of rgeobon is to provide an interface between R and the [GEOBON
-open data portal](https://portal.geobon.org/index%3E) RESTfull API
-(please note that the portal is currently in beta). It allows to consult
-the datasets available on the portal and download them.
+open data portal](https://portal.geobon.org/) RESTfull API (please note
+that the portal is currently in beta). It allows to consult the datasets
+available on the portal and download them.
 
 ## Installation
 

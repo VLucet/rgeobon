@@ -21,7 +21,7 @@ knitr::opts_chunk$set(
 ![R-CMD-check](https://github.com/VLucet/geobon/workflows/R-CMD-check/badge.svg)
 <!-- badges: end -->
 
-The goal of rgeobon is to provide an interface between R and the [GEOBON open data portal](https://portal.geobon.org/index>) RESTfull API (please note that the portal is currently in beta). It allows to consult the datasets available on the portal and download them. 
+The goal of rgeobon is to provide an interface between R and the [GEOBON open data portal](https://portal.geobon.org/) RESTfull API (please note that the portal is currently in beta). It allows to consult the datasets available on the portal and download them. 
 
 ## Installation
 
