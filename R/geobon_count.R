@@ -13,11 +13,11 @@ geobon_count = function() {
 
   request <- httr::GET("https://portal.geobon.org/api/v1/datasets/count")
   if(checkmate::test_string(httr::http_type(request), "application/json")){
-    if(httr::content(request)$code == 404){
+    the_content <- httr::content(request, as="text", encoding = "UTF-8")
+    parsed <- jsonlite::fromJSON(the_content, flatten = T)
+    if(parsed$code == 404){
       stop("http error 404")
     } else {
-      parsed <- jsonlite::fromJSON(
-        httr::content(request, as="text", encoding = "UTF-8"), flatten = T)
       return(as.numeric(parsed$data))
     }
   } else {

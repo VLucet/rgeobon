@@ -40,11 +40,11 @@ geobon_get = function(id=NULL, ebv_class=NULL, ebv_name=NULL){
   request <- httr::GET(url)
 
   if(checkmate::test_string(httr::http_type(request), "application/json")){
-    if(httr::content(request)$code == 404){
+    the_content <- httr::content(request, as="text", encoding = "UTF-8")
+    parsed <- jsonlite::fromJSON(the_content, flatten = T)
+    if(parsed$code == 404){
       stop(paste0("no datasets available for ", selector_name," : ", value))
     } else {
-      the_content <- httr::content(request, as="text", encoding = "UTF-8")
-      parsed <- jsonlite::fromJSON(the_content, flatten = T)
       return(parsed$data)
     }
   } else {
