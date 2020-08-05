@@ -11,9 +11,9 @@
 #' a \code{data.frame} with the record(s) matching the request.
 #'
 #' @examples
-#' geobon_get(id = 50)
+#' geobon_get(id = 2)
 #' geobon_get(ebv_class = "Community composition")
-#' geobon_get(ebv_name = "Habitat structure")
+#' geobon_get(ebv_name = "Taxonomic diversity")
 #'
 #' @export
 geobon_get = function(id=NULL, ebv_class=NULL, ebv_name=NULL){

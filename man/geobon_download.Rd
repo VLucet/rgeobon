@@ -18,6 +18,6 @@ Function is used for its side effects
 Downloads a specific GEOBON EBV dataset from ID.
 }
 \examples{
-geobon_download(id = 49, path = tempdir())
+geobon_download(id = 2, path = tempdir())
 
 }

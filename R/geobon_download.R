@@ -9,7 +9,7 @@
 #' Function is used for its side effects
 #'
 #' @examples
-#' geobon_download(id = 49, path = tempdir())
+#' geobon_download(id = 2, path = tempdir())
 #'
 #' @export
 geobon_download = function(id = NULL, path = getwd()){

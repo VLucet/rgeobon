@@ -21,8 +21,8 @@ Retrives a specific GEOBON EBV record. Note that only one of the three options
 can be specified at a time.
 }
 \examples{
-geobon_get(id = 50)
+geobon_get(id = 2)
 geobon_get(ebv_class = "Community composition")
-geobon_get(ebv_name = "Habitat structure")
+geobon_get(ebv_name = "Taxonomic diversity")
 
 }
