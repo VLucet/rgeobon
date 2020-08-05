@@ -4,3 +4,4 @@
 .Ruserdata
 renv/
 renv.lock
+.Rprofile
