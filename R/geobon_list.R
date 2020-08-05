@@ -5,7 +5,7 @@
 #' values for EBV classes and names.
 #'
 #' @return
-#' A \code{data.frame} for \code{geobon_list()} and a list for \code{geobon_list_ebv()}
+#' A \code{tibble} for \code{geobon_list()} and a list for \code{geobon_list_ebv()}
 #'
 #' @examples
 #' geobon_list()
@@ -21,7 +21,8 @@ geobon_list = function(){
     if(parsed$code == 404){
       stop("http error 404")
     } else{
-      return(as.data.frame(parsed$data))
+      tbl_data <- tibble::as_tibble(parsed$data)
+      return(tbl_data)
     }
   } else {
     stop("API response is not of type application/json")

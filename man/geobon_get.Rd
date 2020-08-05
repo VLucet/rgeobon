@@ -14,7 +14,7 @@ geobon_get(id = NULL, ebv_class = NULL, ebv_name = NULL)
 \item{ebv_name}{(character string) The EBV name of the dataset(s)}
 }
 \value{
-a \code{data.frame} with the record(s) matching the request.
+a \code{tibble} with the record(s) matching the request.
 }
 \description{
 Retrives a specific GEOBON EBV record. Note that only one of the three options

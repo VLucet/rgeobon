@@ -8,7 +8,7 @@
 #' @param ebv_name (character string) The EBV name of the dataset(s)
 #'
 #' @return
-#' a \code{data.frame} with the record(s) matching the request.
+#' a \code{tibble} with the record(s) matching the request.
 #'
 #' @examples
 #' geobon_get(id = 2)
@@ -45,7 +45,8 @@ geobon_get = function(id=NULL, ebv_class=NULL, ebv_name=NULL){
     if(parsed$code == 404){
       stop(paste0("no datasets available for ", selector_name," : ", value))
     } else {
-      return(parsed$data)
+      tbl_data <- tibble::as_tibble(parsed$data)
+      return(tbl_data)
     }
   } else {
     stop("API response is not of type application/json")

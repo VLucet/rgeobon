@@ -1,6 +1,6 @@
 test_that("List of dataset is df", {
   the_list <- geobon_list()
-  expect_s3_class(the_list, "data.frame")
+  expect_s3_class(the_list, "tbl_df")
 })
 
 test_that("Ebv list returns error message for now", {

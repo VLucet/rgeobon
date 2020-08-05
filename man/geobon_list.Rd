@@ -10,7 +10,7 @@ geobon_list()
 geobon_list_ebv()
 }
 \value{
-A \code{data.frame} for \code{geobon_list()} and a list for \code{geobon_list_ebv()}
+A \code{tibble} for \code{geobon_list()} and a list for \code{geobon_list_ebv()}
 }
 \description{
 The function \code{geobon_list} Retrieves the list of all datasets available

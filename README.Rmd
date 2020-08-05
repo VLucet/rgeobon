@@ -39,7 +39,7 @@ This demonstrates the basic abilities of `rgeobon`. You can first get the list o
 library(rgeobon)
 # Get the list of GEOBON datasets
 dataset_list <- geobon_list()
-head(dataset_list)
+dataset_list
 ```
 
 From here, you can request information on a single record, and download the data associated with this record, if any is available. 

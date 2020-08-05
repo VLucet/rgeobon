@@ -1,5 +1,5 @@
 test_that("get works", {
-  expect_s3_class(geobon_get(id = 1), "data.frame")
+  expect_s3_class(geobon_get(id = 1), "tbl_df")
   expect_s3_class(geobon_get(ebv_class = "Community composition"), "data.frame")
   expect_s3_class(geobon_get(ebv_name = "Taxonomic diversity"), "data.frame")
 
