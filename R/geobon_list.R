@@ -34,7 +34,7 @@ geobon_list = function(){
 geobon_list_ebv = function() {
 
   the_list <- geobon_list()
-  df <-  the_list[, c("ebv.ebvClass", "ebv.ebvName")]
+  df <-  the_list[, c("ebv_ebv_class", "ebv_ebv_name")]
   names(df) <- c("ebv_class", "ebv_name")
   returned_list <- lapply(as.list(df), unique)
   return(returned_list)
