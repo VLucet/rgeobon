@@ -45,9 +45,12 @@ head(dataset_list)
 From here, you can request information on a single record, and download the data associated with this record, if any is available. 
 
 ```{r example_followup}
+# List possible ids
+dataset_list$id
+
 # Get a specific record
-geobon_get(id = 49)
+geobon_get(id = 1)
 
 # Download the data from that record into a temp directory
-geobon_download(id = 49, path = tempdir())
+geobon_download(id = 1, path = tempdir())
 ```
