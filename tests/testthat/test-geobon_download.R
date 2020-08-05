@@ -1,4 +1,4 @@
 test_that("download works", {
-  geobon_download(id = 49, path = tempdir())
-  expect_true(file.exists(file.path(tempdir(), "hansen_lossyear_1000m.nc")))
+  geobon_download(id = 1, path = tempdir())
+  expect_true(file.exists(file.path(tempdir(), "cSAR_idiv_v1.nc")))
 })
