@@ -37,29 +37,32 @@ library(rgeobon)
 dataset_list <- geobon_list()
 dataset_list
 #> # A tibble: 6 x 33
-#>   id    title publicationDate environmentalDo… provenanceDescr… license DOI  
-#>   <chr> <chr> <chr>           <chr>            <chr>            <chr>   <lis>
-#> 1 1     Chan… 2018            Terrestrial      To be added soon CC BY … <chr…
-#> 2 2     Fore… 2019            Terrestrial      To be added soon CC BY … <chr…
-#> 3 3     Pred… 2016            Terrestrial      To be added soon CC BY … <chr…
-#> 4 4     Rela… 2020            Terrestrial      To be added soon CC BY … <chr…
-#> 5 5     Mamm… 2020            Terrestrial      To be added soon CC BY … <chr…
-#> 6 10    Glob… 2020            Terrestrial, Ma… To develop the … CC BY … <chr…
-#> # … with 26 more variables: ExternalLink <list>, description <chr>,
-#> #   keywords <list>, additionalInfo <chr>, pathNameDataset <chr>,
-#> #   pathNameMetadata <chr>, creator.creatorName <chr>,
-#> #   creator.creatorOrganisation <chr>, creator.creatorEmail <chr>,
-#> #   contact.contactName <chr>, contact.contactOrganisation <chr>,
-#> #   contact.contactEmail <chr>, ebv.ebvClass <chr>, ebv.ebvName <chr>,
-#> #   spatialDomain.spatialExtent <chr>, spatialDomain.spatialDescription <chr>,
-#> #   spatialDomain.spatialResolution <chr>, spatialDomain.spatialAccuracy <chr>,
-#> #   temporalDomain.temporalResolution <chr>,
-#> #   temporalDomain.temporalExtentStart <chr>,
-#> #   temporalDomain.temporalExtentEnd <chr>, biologicalEntity.entityType <chr>,
-#> #   biologicalEntity.taxonomicCoverage <chr>,
-#> #   biologicalEntity.classification.classificationSystemName <chr>,
-#> #   biologicalEntity.classification.classificationSystemType <chr>,
-#> #   biologicalEntity.classification.classificationSystemReference <chr>
+#>   id    title publication_date environmental_d… provenance_desc… license doi  
+#>   <chr> <chr> <chr>            <chr>            <chr>            <chr>   <lis>
+#> 1 1     Chan… 2018             Terrestrial      To be added soon CC BY … <chr…
+#> 2 2     Fore… 2019             Terrestrial      To be added soon CC BY … <chr…
+#> 3 3     Pred… 2016             Terrestrial      To be added soon CC BY … <chr…
+#> 4 4     Rela… 2020             Terrestrial      To be added soon CC BY … <chr…
+#> 5 5     Mamm… 2020             Terrestrial      To be added soon CC BY … <chr…
+#> 6 10    Glob… 2020             Terrestrial, Ma… To develop the … CC BY … <chr…
+#> # … with 26 more variables: external_link <list>, description <chr>,
+#> #   keywords <list>, additional_info <chr>, path_name_dataset <chr>,
+#> #   path_name_metadata <chr>, creator_creator_name <chr>,
+#> #   creator_creator_organisation <chr>, creator_creator_email <chr>,
+#> #   contact_contact_name <chr>, contact_contact_organisation <chr>,
+#> #   contact_contact_email <chr>, ebv_ebv_class <chr>, ebv_ebv_name <chr>,
+#> #   spatial_domain_spatial_extent <chr>,
+#> #   spatial_domain_spatial_description <chr>,
+#> #   spatial_domain_spatial_resolution <chr>,
+#> #   spatial_domain_spatial_accuracy <chr>,
+#> #   temporal_domain_temporal_resolution <chr>,
+#> #   temporal_domain_temporal_extent_start <chr>,
+#> #   temporal_domain_temporal_extent_end <chr>,
+#> #   biological_entity_entity_type <chr>,
+#> #   biological_entity_taxonomic_coverage <chr>,
+#> #   biological_entity_classification_classification_system_name <chr>,
+#> #   biological_entity_classification_classification_system_type <chr>,
+#> #   biological_entity_classification_classification_system_reference <chr>
 ```
 
 From here, you can request information on a single record, and download
@@ -73,24 +76,27 @@ dataset_list$id
 # Get a specific record
 geobon_get(id = 1)
 #> # A tibble: 1 x 33
-#>   id    title publicationDate environmentalDo… provenanceDescr… license DOI  
-#>   <chr> <chr> <chr>           <chr>            <chr>            <chr>   <lis>
-#> 1 1     Chan… 2018            Terrestrial      To be added soon CC BY … <chr…
-#> # … with 26 more variables: ExternalLink <list>, description <chr>,
-#> #   keywords <list>, additionalInfo <chr>, pathNameDataset <chr>,
-#> #   pathNameMetadata <chr>, creator.creatorName <chr>,
-#> #   creator.creatorOrganisation <chr>, creator.creatorEmail <chr>,
-#> #   contact.contactName <chr>, contact.contactOrganisation <chr>,
-#> #   contact.contactEmail <chr>, ebv.ebvClass <chr>, ebv.ebvName <chr>,
-#> #   spatialDomain.spatialExtent <chr>, spatialDomain.spatialDescription <chr>,
-#> #   spatialDomain.spatialResolution <chr>, spatialDomain.spatialAccuracy <chr>,
-#> #   temporalDomain.temporalResolution <chr>,
-#> #   temporalDomain.temporalExtentStart <chr>,
-#> #   temporalDomain.temporalExtentEnd <chr>, biologicalEntity.entityType <chr>,
-#> #   biologicalEntity.taxonomicCoverage <chr>,
-#> #   biologicalEntity.classification.classificationSystemName <chr>,
-#> #   biologicalEntity.classification.classificationSystemType <chr>,
-#> #   biologicalEntity.classification.classificationSystemReference <chr>
+#>   id    title publication_date environmental_d… provenance_desc… license doi  
+#>   <chr> <chr> <chr>            <chr>            <chr>            <chr>   <lis>
+#> 1 1     Chan… 2018             Terrestrial      To be added soon CC BY … <chr…
+#> # … with 26 more variables: external_link <list>, description <chr>,
+#> #   keywords <list>, additional_info <chr>, path_name_dataset <chr>,
+#> #   path_name_metadata <chr>, creator_creator_name <chr>,
+#> #   creator_creator_organisation <chr>, creator_creator_email <chr>,
+#> #   contact_contact_name <chr>, contact_contact_organisation <chr>,
+#> #   contact_contact_email <chr>, ebv_ebv_class <chr>, ebv_ebv_name <chr>,
+#> #   spatial_domain_spatial_extent <chr>,
+#> #   spatial_domain_spatial_description <chr>,
+#> #   spatial_domain_spatial_resolution <chr>,
+#> #   spatial_domain_spatial_accuracy <chr>,
+#> #   temporal_domain_temporal_resolution <chr>,
+#> #   temporal_domain_temporal_extent_start <chr>,
+#> #   temporal_domain_temporal_extent_end <chr>,
+#> #   biological_entity_entity_type <chr>,
+#> #   biological_entity_taxonomic_coverage <chr>,
+#> #   biological_entity_classification_classification_system_name <chr>,
+#> #   biological_entity_classification_classification_system_type <chr>,
+#> #   biological_entity_classification_classification_system_reference <chr>
 
 # Download the data from that record into a temp directory
 geobon_download(id = 1, path = tempdir())
