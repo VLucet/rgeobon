@@ -27,3 +27,4 @@ Collate:
     'geobon_download.R'
     'geobon_get.R'
     'geobon_list.R'
+    'rgeobon-package.R'
