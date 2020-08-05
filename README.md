@@ -9,6 +9,8 @@
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Coverage
+Status](https://img.shields.io/codecov/c/github/vlucet/rgeobon/master.svg)](https://codecov.io/github/vlucet/rgeobon?branch=master)
 [![R build
 status](https://github.com/VLucet/geobon/workflows/R-CMD-check/badge.svg)](https://github.com/VLucet/geobon/actions)
 <!-- badges: end -->
