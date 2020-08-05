@@ -5,5 +5,6 @@
 #' It allows to consult the datasets available on the portal and download them.
 #'
 #' @docType package
+#' @importFrom janitor clean_names
 #' @name rgeobon
 NULL

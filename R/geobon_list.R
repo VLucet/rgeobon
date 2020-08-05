@@ -21,7 +21,7 @@ geobon_list = function(){
     if(parsed$code == 404){
       stop("http error 404")
     } else{
-      tbl_data <- tibble::as_tibble(parsed$data)
+      tbl_data <- janitor::clean_names(tibble::as_tibble(parsed$data))
       return(tbl_data)
     }
   } else {

@@ -45,7 +45,7 @@ geobon_get = function(id=NULL, ebv_class=NULL, ebv_name=NULL){
     if(parsed$code == 404){
       stop(paste0("no datasets available for ", selector_name," : ", value))
     } else {
-      tbl_data <- tibble::as_tibble(parsed$data)
+      tbl_data <- janitor::clean_names(tibble::as_tibble(parsed$data))
       return(tbl_data)
     }
   } else {
