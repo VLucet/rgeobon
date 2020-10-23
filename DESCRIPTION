@@ -1,7 +1,7 @@
 Package: rgeobon
 Type: Package
 Title: The R interface to the GEOBON open data portal RESTfull API
-Version: 0.3.3
+Version: 0.3.4
 Authors@R: person(given = "Valentin",
            family = "Lucet",
            role = c("aut", "cre"),

@@ -19,7 +19,7 @@ geobon_download = function(id = NULL, path = getwd()){
   for (id in id){
     record <- geobon_get(id = id)
     file_path <- record$path_name_dataset
-    curl::curl_download(paste0("https://portal.geobon.org/data", file_path),
+    curl::curl_download(paste0("https://portal.geobon.org/data/upload/", file_path),
                         destfile = file.path(path, basename(file_path)))
   }
 }
