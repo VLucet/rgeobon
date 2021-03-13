@@ -1,3 +1,4 @@
 url: https://vlucet.github.io/rgeobon
-
-use
+template:
+  params:
+    bootswatch: flatly
